@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: #fff;
+  margin-top: 5rem;
 }
 
 .App-logo {
@@ -14,18 +20,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; /* Dark Background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFFFFF; /* White */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #FF5722; /* Primary Color */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +41,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.response-div {
+  max-width: 75vw;
+  background-color: rgb(56, 56, 56); /* Dark Grey */
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border-radius: 50px;
+  box-shadow: inset 2px 2px 4px rgb(0, 0, 0.7);
+}
+
+.workout-plan {
+  font-size: 1rem;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 100vh;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(rgb(255, 255, 255) 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
 }

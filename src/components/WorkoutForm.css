@@ -1,0 +1,108 @@
+.workout-form {
+    display: grid;
+    grid-template-rows: .5fr .5fr .25fr .25fr;
+    background-color: rgb(56, 56, 56); /* Dark Grey */
+    padding: 2.5rem;
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 4px rgb(0, 0, 0.7);
+    max-width: 75vw;
+}
+
+.submit-btn {
+    max-width: 60vw;
+    margin: 4rem auto 0 auto;
+    padding: .5rem;
+    align-self: center;
+    grid-column: 1 / span 4;
+    font-weight: 500;
+    font-size: 1.15rem;
+    background-color: #bc4521; /* Primary Color */
+    color: #FFFFFF; /* White */
+    border: none;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.submit-btn:hover {
+    outline: none;
+    background-color: #ff6a3d; /* Secondary Color */
+    box-shadow: 0 0 10px #ff6a3d;
+
+}
+
+.submit-btn:active {
+    outline: none;
+    background-color: #bc4521; /* Secondary Color */
+    box-shadow: inset 1px 1px 2px rgb(0, 0, 0);
+}
+
+label {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #F5F5F5; /* Light Grey */
+}
+
+input {
+    margin-top: .5rem;
+}
+
+.input-group-container1 {
+    grid-row: 1;
+}
+.input-group-container2 {
+    grid-row: 2;
+}
+.input-group-container3 {
+    grid-row: 3;
+}
+.input-group-container4 {
+    grid-row: 4;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-group > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Adds space between lines */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-top: .25rem;
+    margin-right: .5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    border-color: #FF5722; /* Primary Color */
+    box-shadow: 0 0 10px #FF5722;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #FF5722; /* Primary Color */
+    border-color: #FF5722; /* Primary Color */
+    box-shadow: 0 0 10px #FF5722;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
