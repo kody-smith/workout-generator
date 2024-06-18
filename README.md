@@ -1,6 +1,21 @@
+# Project Introduction
+
+This application is a simpel React app that provides users with an AI tool for providing free of cost, high-quality workout programs.
+
+The interafce allows you to select from multiple workout preferences that you can then submit to the OpenAI backend to retrieve an AI generated workout plan.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+In order to run this application on your machine you need an API token provided by OpenAI.
+
+Here are the steps to follow before starting:  
+
+1. Visit [OpenAI API Keys](https://platform.openai.com/api-keys) to acquire an API token.
+2. Create a new token
+3. Create a .env file in the root of the project directory
+4. Store the token in the .env file as `OPENAI_API_KEY={your_key_here}`
 
 ## Available Scripts
 
