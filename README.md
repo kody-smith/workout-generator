@@ -1,6 +1,6 @@
 # Project Introduction
 
-This application is a simpel React app that provides users with an AI tool for providing free of cost, high-quality workout programs.
+This application is a simple React app that provides users with an AI tool for providing free of cost, high-quality workout programs.
 
 The interafce allows you to select from multiple workout preferences that you can then submit to the OpenAI backend to retrieve an AI generated workout plan.
 
